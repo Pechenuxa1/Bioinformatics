@@ -1,0 +1,12 @@
+Ген  | Название вида на латыни    | Название вида на русском
+
+IL6   Alligator mississippiensis   Миссисипский аллигатор
+IL6   Bombina bombina              Краснобрюхая жерлянка
+IL6   Bufo bufo                    Серая жаба
+IL6   Columba livia                Сизый голубь             
+IL6   Coturnix japonica            Немой перепел
+IL6   Cygnus atratus               Черный лебедь
+IL6   Dromaius novaehollandiae     Эму
+IL6   Gallus gallus                Банкивская джунглевская курица
+IL6   Rana temporaria              Травяная лягушка
+IL6   Sceloporus undulatus         Восточная заборная игуана

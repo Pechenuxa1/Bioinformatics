@@ -1,0 +1,3 @@
+Program: blastn. Database - Standart databases, nucleotide collection (nr/rt).
+Organism: mammals(taxid:40674) exclude
+Optimization - Highly similar sequences (megablast).
