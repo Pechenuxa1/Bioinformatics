@@ -1,0 +1,21 @@
+[34m[2024-11-04T14:35:26+0700][0m [34m[MainThread][0m [34m[I][0m [35m[toil.worker][0m ---TOIL WORKER OUTPUT LOG---
+[34m[2024-11-04T14:35:26+0700][0m [34m[MainThread][0m [34m[I][0m [35m[toil][0m Running Toil version 7.0.0-d569ea5711eb310ffd5703803f7250ebf7c19576 on host MAIBENBEN-PC.
+[34m[2024-11-04T14:35:26+0700][0m [34m[MainThread][0m [34m[I][0m [35m[toil.worker][0m Working on job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13
+[34m[2024-11-04T14:35:27+0700][0m [34m[MainThread][0m [34m[I][0m [35m[toil.worker][0m Loaded body Job('alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13) from description 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13
+Mapped: 69.9%
+NOT OK
+[34m[2024-11-04T14:35:36+0700][0m [34m[MainThread][0m [34m[C][0m [35m[toil.worker][0m [1;31mWorker crashed with traceback:
+Traceback (most recent call last):
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/worker.py", line 438, in workerScript
+    job._runner(jobGraph=None, jobStore=job_store, fileStore=fileStore, defer=defer)
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2984, in _runner
+    returnValues = self._run(jobGraph=None, fileStore=fileStore)
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2895, in _run
+    return self.run(fileStore)
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 3158, in run
+    rValue = userFunction(*((self,) + tuple(self._args)), **self._kwargs)
+  File "/mnt/c/Users/vtatt/algorithm.py", line 51, in alignment_statistics
+    raise Exception()
+Exception
+[0m
+[34m[2024-11-04T14:35:36+0700][0m [34m[MainThread][0m [34m[E][0m [35m[toil.worker][0m [1;31mExiting the worker because of a failed job on host MAIBENBEN-PC[0m

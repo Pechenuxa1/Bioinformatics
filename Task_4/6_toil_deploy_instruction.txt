@@ -1,0 +1,13 @@
+Ссылка на официальную документацию по установке: https://toil.readthedocs.io/en/master/gettingStarted/install.html
+
+1. Обновите virtualenv до последней версии
+pip install --user virtualenv
+
+2. Создайте виртуальную среду
+python3 -m virtualenv ~/venv
+
+3. Активируйте ее
+source ~/venv/bin/activate
+
+4. Для описания пайплайнов на python установите toil
+pip install toil

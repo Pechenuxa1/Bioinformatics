@@ -1,0 +1,251 @@
+Start
+[2024-11-04T14:26:33+0700] [MainThread] [I] [toil] Running Toil version 7.0.0-d569ea5711eb310ffd5703803f7250ebf7c19576 on host MAIBENBEN-PC.
+[2024-11-04T14:26:33+0700] [MainThread] [I] [toil.leader] Issued job 'run_fastqc' kind-run_fastqc/instance-0tn5o5dk v1 with job batch system ID: 1 and disk: 2.0 Gi, memory: 2.0 Gi, cores: 1, accelerators: [], preemptible: False
+[2024-11-04T14:26:35+0700] [MainThread] [I] [toil.leader] 1 jobs are running, 0 jobs are issued and waiting to run
+[2024-11-04T14:35:26+0700] [Thread-1 (daddy)] [E] [toil.batchSystems.singleMachine] Got exit code 1 (indicating failure) from job _toil_worker run_fastqc file:/mnt/c/Users/vtatt/my-jobstore-20 kind-run_fastqc/instance-0tn5o5dk.
+[2024-11-04T14:35:26+0700] [MainThread] [W] [toil.leader] Job failed with exit value 1: 'run_fastqc' kind-run_fastqc/instance-0tn5o5dk v1
+Exit reason: None
+[2024-11-04T14:35:26+0700] [MainThread] [W] [toil.leader] The job seems to have left a log file, indicating failure: 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v11
+[2024-11-04T14:35:26+0700] [MainThread] [W] [toil.leader] Log from job "kind-run_fastqc/instance-0tn5o5dk" follows:
+=========>
+        [2024-11-04T14:26:34+0700] [MainThread] [I] [toil.worker] ---TOIL WORKER OUTPUT LOG---
+        [2024-11-04T14:26:34+0700] [MainThread] [I] [toil] Running Toil version 7.0.0-d569ea5711eb310ffd5703803f7250ebf7c19576 on host MAIBENBEN-PC.
+        [2024-11-04T14:26:34+0700] [MainThread] [I] [toil.worker] Working on job 'run_fastqc' kind-run_fastqc/instance-0tn5o5dk v1
+        [2024-11-04T14:26:34+0700] [MainThread] [I] [toil.worker] Loaded body Job('run_fastqc' kind-run_fastqc/instance-0tn5o5dk v1) from description 'run_fastqc' kind-run_fastqc/instance-0tn5o5dk v1
+        Started analysis of SRR292770.fastq
+        Approx 5% complete for SRR292770.fastq
+        Approx 10% complete for SRR292770.fastq
+        Approx 15% complete for SRR292770.fastq
+        Approx 20% complete for SRR292770.fastq
+        Approx 25% complete for SRR292770.fastq
+        Approx 30% complete for SRR292770.fastq
+        Approx 35% complete for SRR292770.fastq
+        Approx 40% complete for SRR292770.fastq
+        Approx 45% complete for SRR292770.fastq
+        Approx 50% complete for SRR292770.fastq
+        Approx 55% complete for SRR292770.fastq
+        Approx 60% complete for SRR292770.fastq
+        Approx 65% complete for SRR292770.fastq
+        Approx 70% complete for SRR292770.fastq
+        Approx 75% complete for SRR292770.fastq
+        Approx 80% complete for SRR292770.fastq
+        Approx 85% complete for SRR292770.fastq
+        Approx 90% complete for SRR292770.fastq
+        Approx 95% complete for SRR292770.fastq
+        Analysis complete for SRR292770.fastq
+        [2024-11-04T14:28:13+0700] [MainThread] [I] [toil.worker] Completed body for 'run_fastqc' kind-run_fastqc/instance-0tn5o5dk v2
+        [2024-11-04T14:28:13+0700] [MainThread] [I] [toil.worker] Chaining from 'run_fastqc' kind-run_fastqc/instance-0tn5o5dk v2 to 'index_reference_genome' kind-index_reference_genome/instance-m477n2it v1
+        [2024-11-04T14:28:13+0700] [MainThread] [I] [toil.worker] Working on job 'index_reference_genome' kind-run_fastqc/instance-0tn5o5dk v3
+        [2024-11-04T14:28:13+0700] [MainThread] [I] [toil.worker] Loaded body Job('index_reference_genome' kind-run_fastqc/instance-0tn5o5dk v3) from description 'index_reference_genome' kind-run_fastqc/instance-0tn5o5dk v3
+        [bwa_index] Pack FASTA... 0.03 sec
+        [bwa_index] Construct BWT for the packed sequence...
+        [bwa_index] 1.43 seconds elapse.
+        [bwa_index] Update BWT... 0.02 sec
+        [bwa_index] Pack forward-only FASTA... 0.01 sec
+        [bwa_index] Construct SA from BWT and Occ... 1.00 sec
+        [main] Version: 0.7.17-r1188
+        [main] CMD: bwa index /mnt/c/Users/vtatt/Downloads/report/GCA_000005845.2_ASM584v2_genomic.fna
+        [main] Real time: 2.790 sec; CPU: 2.491 sec
+        [2024-11-04T14:28:16+0700] [MainThread] [I] [toil.worker] Completed body for 'index_reference_genome' kind-run_fastqc/instance-0tn5o5dk v4
+        [2024-11-04T14:28:16+0700] [MainThread] [I] [toil.worker] Chaining from 'index_reference_genome' kind-run_fastqc/instance-0tn5o5dk v4 to 'align_reads' kind-align_reads/instance-9ztxyve6 v1
+        [2024-11-04T14:28:16+0700] [MainThread] [I] [toil.worker] Working on job 'align_reads' kind-run_fastqc/instance-0tn5o5dk v5
+        [2024-11-04T14:28:16+0700] [MainThread] [I] [toil.worker] Loaded body Job('align_reads' kind-run_fastqc/instance-0tn5o5dk v5) from description 'align_reads' kind-run_fastqc/instance-0tn5o5dk v5
+        [M::bwa_idx_load_from_disk] read 0 ALT contigs
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.432 CPU sec, 5.280 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.797 CPU sec, 5.853 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.893 CPU sec, 5.715 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.744 CPU sec, 5.554 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 7.498 CPU sec, 7.174 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.993 CPU sec, 5.722 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.303 CPU sec, 6.011 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.597 CPU sec, 5.341 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.717 CPU sec, 5.781 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.955 CPU sec, 5.968 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.698 CPU sec, 5.425 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.100 CPU sec, 5.813 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.784 CPU sec, 5.531 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.954 CPU sec, 5.686 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.733 CPU sec, 5.477 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.853 CPU sec, 5.595 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.899 CPU sec, 5.627 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.830 CPU sec, 5.576 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.881 CPU sec, 5.617 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.731 CPU sec, 5.483 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.898 CPU sec, 5.633 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.723 CPU sec, 5.471 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.960 CPU sec, 5.692 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.626 CPU sec, 5.393 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 9.237 CPU sec, 8.866 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 7.670 CPU sec, 7.320 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 7.361 CPU sec, 6.980 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 7.608 CPU sec, 7.253 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.935 CPU sec, 6.591 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 7.122 CPU sec, 6.791 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.796 CPU sec, 6.474 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.733 CPU sec, 6.390 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.681 CPU sec, 5.429 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.877 CPU sec, 5.613 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.714 CPU sec, 5.469 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.992 CPU sec, 5.729 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.815 CPU sec, 5.547 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.137 CPU sec, 5.851 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.899 CPU sec, 5.610 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 6.014 CPU sec, 5.727 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.627 CPU sec, 5.375 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.928 CPU sec, 5.663 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.726 CPU sec, 5.465 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.836 CPU sec, 5.573 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.761 CPU sec, 5.504 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.578 CPU sec, 5.324 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.924 CPU sec, 5.661 real sec
+        [M::process] read 204082 sequences (10000018 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.755 CPU sec, 5.492 real sec
+        [M::process] read 204064 sequences (9999136 bp)...
+        [M::mem_process_seqs] Processed 204082 reads in 5.858 CPU sec, 5.913 real sec
+        [M::mem_process_seqs] Processed 204064 reads in 5.463 CPU sec, 5.307 real sec
+        [main] Version: 0.7.17-r1188
+        [main] CMD: bwa mem /mnt/c/Users/vtatt/Downloads/report/GCA_000005845.2_ASM584v2_genomic.fna /mnt/c/Users/vtatt/Downloads/report/SRR292770.fastq
+        [main] Real time: 295.684 sec; CPU: 305.952 sec
+        [2024-11-04T14:33:12+0700] [MainThread] [I] [toil.worker] Completed body for 'align_reads' kind-run_fastqc/instance-0tn5o5dk v6
+        [2024-11-04T14:33:12+0700] [MainThread] [I] [toil.worker] Chaining from 'align_reads' kind-run_fastqc/instance-0tn5o5dk v6 to 'convert_to_bam' kind-convert_to_bam/instance-_65y32ec v1
+        [2024-11-04T14:33:12+0700] [MainThread] [I] [toil.worker] Working on job 'convert_to_bam' kind-run_fastqc/instance-0tn5o5dk v7
+        [2024-11-04T14:33:12+0700] [MainThread] [I] [toil.worker] Loaded body Job('convert_to_bam' kind-run_fastqc/instance-0tn5o5dk v7) from description 'convert_to_bam' kind-run_fastqc/instance-0tn5o5dk v7
+        [2024-11-04T14:35:12+0700] [MainThread] [I] [toil.worker] Completed body for 'convert_to_bam' kind-run_fastqc/instance-0tn5o5dk v9
+        [2024-11-04T14:35:12+0700] [MainThread] [I] [toil.worker] Chaining from 'convert_to_bam' kind-run_fastqc/instance-0tn5o5dk v9 to 'alignment_statistics' kind-alignment_statistics/instance-gn3q8ob9 v1
+        [2024-11-04T14:35:12+0700] [MainThread] [I] [toil.worker] Working on job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v10
+        [2024-11-04T14:35:12+0700] [MainThread] [I] [toil.worker] Loaded body Job('alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v10) from description 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v10
+        Mapped: 69.9%
+        NOT OK
+        [2024-11-04T14:35:25+0700] [MainThread] [C] [toil.worker] Worker crashed with traceback:
+        Traceback (most recent call last):
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/worker.py", line 438, in workerScript
+            job._runner(jobGraph=None, jobStore=job_store, fileStore=fileStore, defer=defer)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2984, in _runner
+            returnValues = self._run(jobGraph=None, fileStore=fileStore)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2895, in _run
+            return self.run(fileStore)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 3158, in run
+            rValue = userFunction(*((self,) + tuple(self._args)), **self._kwargs)
+          File "/mnt/c/Users/vtatt/algorithm.py", line 51, in alignment_statistics
+            raise Exception()
+        Exception
+
+        [2024-11-04T14:35:25+0700] [MainThread] [E] [toil.worker] Exiting the worker because of a failed job on host MAIBENBEN-PC
+<=========
+[2024-11-04T14:35:26+0700] [MainThread] [W] [toil.job] Due to failure we are reducing the remaining try count of job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v11 with ID kind-run_fastqc/instance-0tn5o5dk to 1
+[2024-11-04T14:35:26+0700] [MainThread] [I] [toil.leader] Issued job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v12 with job batch system ID: 2 and disk: 2.0 Gi, memory: 2.0 Gi, cores: 1, accelerators: [], preemptible: False
+[2024-11-04T14:35:37+0700] [Thread-1 (daddy)] [E] [toil.batchSystems.singleMachine] Got exit code 1 (indicating failure) from job _toil_worker alignment_statistics file:/mnt/c/Users/vtatt/my-jobstore-20 kind-run_fastqc/instance-0tn5o5dk.
+[2024-11-04T14:35:37+0700] [MainThread] [W] [toil.leader] Job failed with exit value 1: 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v12
+Exit reason: None
+[2024-11-04T14:35:37+0700] [MainThread] [W] [toil.leader] The job seems to have left a log file, indicating failure: 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v14
+[2024-11-04T14:35:37+0700] [MainThread] [W] [toil.leader] Log from job "kind-run_fastqc/instance-0tn5o5dk" follows:
+=========>
+        [2024-11-04T14:35:26+0700] [MainThread] [I] [toil.worker] ---TOIL WORKER OUTPUT LOG---
+        [2024-11-04T14:35:26+0700] [MainThread] [I] [toil] Running Toil version 7.0.0-d569ea5711eb310ffd5703803f7250ebf7c19576 on host MAIBENBEN-PC.
+        [2024-11-04T14:35:26+0700] [MainThread] [I] [toil.worker] Working on job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13
+        [2024-11-04T14:35:27+0700] [MainThread] [I] [toil.worker] Loaded body Job('alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13) from description 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13
+        Mapped: 69.9%
+        NOT OK
+        [2024-11-04T14:35:36+0700] [MainThread] [C] [toil.worker] Worker crashed with traceback:
+        Traceback (most recent call last):
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/worker.py", line 438, in workerScript
+            job._runner(jobGraph=None, jobStore=job_store, fileStore=fileStore, defer=defer)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2984, in _runner
+            returnValues = self._run(jobGraph=None, fileStore=fileStore)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2895, in _run
+            return self.run(fileStore)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 3158, in run
+            rValue = userFunction(*((self,) + tuple(self._args)), **self._kwargs)
+          File "/mnt/c/Users/vtatt/algorithm.py", line 51, in alignment_statistics
+            raise Exception()
+        Exception
+
+        [2024-11-04T14:35:36+0700] [MainThread] [E] [toil.worker] Exiting the worker because of a failed job on host MAIBENBEN-PC
+<=========
+[2024-11-04T14:35:37+0700] [MainThread] [W] [toil.job] Due to failure we are reducing the remaining try count of job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v14 with ID kind-run_fastqc/instance-0tn5o5dk to 0
+[2024-11-04T14:35:37+0700] [MainThread] [W] [toil.leader] Job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v15 is completely failed
+[2024-11-04T14:35:45+0700] [MainThread] [I] [toil.leader] Finished toil run with 1 failed jobs.
+[2024-11-04T14:35:45+0700] [MainThread] [I] [toil.leader] Failed jobs at end of the run: 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v15
+                                                                                                                        Workflow Progress 100%|████████████████████████████████████████████████████| 2/2 (2 failures) [09:07<00:00, 0.00 jobs/s]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vtatt/algorithm.py", line 100, in <module>
+    toil.start(fastqc_run)
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/common.py", line 930, in start
+    return self._runMainLoop(rootJobDescription)
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/common.py", line 1417, in _runMainLoop
+    jobCache=self._jobCache).run()
+  File "/home/vlad/venv/lib/python3.10/site-packages/toil/leader.py", line 304, in run
+    raise FailedJobsException(self.jobStore, failed_jobs, exit_code=self.recommended_fail_exit_code)
+toil.exceptions.FailedJobsException: The job store '/mnt/c/Users/vtatt/my-jobstore-20' contains 1 failed jobs: 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v15
+Log from job "'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v15" follows:
+=========>
+        [2024-11-04T14:35:26+0700] [MainThread] [I] [toil.worker] ---TOIL WORKER OUTPUT LOG---
+        [2024-11-04T14:35:26+0700] [MainThread] [I] [toil] Running Toil version 7.0.0-d569ea5711eb310ffd5703803f7250ebf7c19576 on host MAIBENBEN-PC.
+        [2024-11-04T14:35:26+0700] [MainThread] [I] [toil.worker] Working on job 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13
+        [2024-11-04T14:35:27+0700] [MainThread] [I] [toil.worker] Loaded body Job('alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13) from description 'alignment_statistics' kind-run_fastqc/instance-0tn5o5dk v13
+        Mapped: 69.9%
+        NOT OK
+        [2024-11-04T14:35:36+0700] [MainThread] [C] [toil.worker] Worker crashed with traceback:
+        Traceback (most recent call last):
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/worker.py", line 438, in workerScript
+            job._runner(jobGraph=None, jobStore=job_store, fileStore=fileStore, defer=defer)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2984, in _runner
+            returnValues = self._run(jobGraph=None, fileStore=fileStore)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 2895, in _run
+            return self.run(fileStore)
+          File "/home/vlad/venv/lib/python3.10/site-packages/toil/job.py", line 3158, in run
+            rValue = userFunction(*((self,) + tuple(self._args)), **self._kwargs)
+          File "/mnt/c/Users/vtatt/algorithm.py", line 51, in alignment_statistics
+            raise Exception()
+        Exception
+
+        [2024-11-04T14:35:36+0700] [MainThread] [E] [toil.worker] Exiting the worker because of a failed job on host MAIBENBEN-PC
+<=========
