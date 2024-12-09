@@ -1,0 +1,8 @@
+Первичная последовательность белка: MDKGDVTALPMKKWFTTNYHYLVPEVEPSAEIKLNSTKPFDEFNEAKSLGVETKPVFIGPYTFLKLARTPEAAELEIDKGLVNAVAAVYAEVLARFNDLG
+
+Инструмент 1 фолдинга белков: ESMFold
+
+Инструмент 2 фолдинга белков: AlphaFold2
+
+Инструмент парного выравнивания: jFATCAT-flexible (в списке Alignment Method) https://www.rcsb.org/alignment
+
